@@ -45,7 +45,7 @@ export function MainNavbar() {
         }}
       >
         <Box component={Link} href="/" sx={{ lineHeight: 0, textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}>
-          <Image src="/replicate-logo.svg" alt="Replicate" width={290} height={52} priority style={{ width: 'auto', height: '40px', maxWidth: '100%' }} />
+          <Image src="/logo.png" alt="Replicate" width={1139} height={279} priority style={{ width: 'auto', height: '50px', maxWidth: '100%' }} />
         </Box>
         <Box sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 2.2 }}>
           {navItems.map((item) => (

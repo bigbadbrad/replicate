@@ -4,7 +4,7 @@ import { Box, Button, Container, Typography } from '@mui/material';
 export function CtaBand() {
   return (
     <Box component="section" sx={{ py: { xs: 5, md: 6 }, background: 'linear-gradient(90deg, #0A2460 0%, #0B2F71 40%, #0F5A8F 100%)' }}>
-      <Container maxWidth="lg" sx={{ display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: { xs: 'flex-start', md: 'center' }, justifyContent: 'space-between', gap: 2.5 }}>
+      <Container maxWidth={false} disableGutters sx={{ maxWidth: 1220, mx: 'auto', px: { xs: 2, md: 3 }, boxSizing: 'border-box', display: 'flex', flexDirection: { xs: 'column', md: 'row' }, alignItems: { xs: 'flex-start', md: 'center' }, justifyContent: 'space-between', gap: 2.5 }}>
         <Box>
           <Typography component="h2" sx={{ color: '#FFFFFF', fontWeight: 700, fontSize: { xs: '1.45rem', md: '2rem' }, mb: 0.5 }}>
             Ready to elevate patient care?
