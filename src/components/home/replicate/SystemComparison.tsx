@@ -24,6 +24,20 @@ export function SystemComparison() {
       <Box sx={{ border: '1px solid #DDE8F7', borderRadius: 2, overflow: 'hidden' }}>
         <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1fr', md: '1.15fr 1fr 1fr 1fr' } }}>
           <Box sx={{ p: 2.2, backgroundColor: '#F8FBFF' }}>
+            {/* Matches column header height + mb so criteria align with value rows (md+). */}
+            <Typography
+              variant="body1"
+              aria-hidden
+              sx={{
+                fontWeight: 700,
+                mb: 1.2,
+                color: 'transparent',
+                display: { xs: 'none', md: 'block' },
+                lineHeight: 1.43,
+              }}
+            >
+              Traditional Bridge
+            </Typography>
             {criteria.map((row) => (
               <Typography key={row} sx={{ color: '#4C5F7E', fontSize: '0.9rem', py: 0.8 }}>{row}</Typography>
             ))}
