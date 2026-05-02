@@ -12,7 +12,7 @@ declare global {
     visitorCountry?: string;
   }
 }
-
+  
 const BLOCKED_COUNTRIES = [
   'RU', 'CN', 'IR', 'KP', 'PK', 'VN',
   'NG', 'UA', 'IN', 'SA', 'BD', 'EG', 'CZ',
